@@ -1,0 +1,22 @@
+.project-card {
+  width: 320px;
+  height: 320px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px
+  }
+  &:hover {
+    transform: scale(0.98);
+  }
+  &__title {
+    margin: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+}
