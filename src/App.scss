@@ -4,5 +4,17 @@
   background-color: #1A73E8;
   border-radius: 30px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 300px auto;
+}
+
+@media(max-width: 1400px) {
+  .App {
+    grid-template-columns: 250px auto;
+  }
+}
+
+@media(max-width: 1345px) {
+  .App {
+    grid-template-columns: 50px auto;
+  }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom';
 import MainScreen from '../main/MainScreen';
 import Projects from '../projects/Projects';
@@ -6,18 +6,28 @@ import Contacts from '../contact/Contacts';
 import './nav.scss';
 
 function Nav(props) {
+  const [hamburger, setHamburger] = useState(false);
+  function handleHamburger() {
+    setHamburger(!hamburger);
+  }
   return (
     <BrowserRouter>
-      <nav>
+      <nav className={ hamburger ? 'nav-is-active' : '' }>
+        <span onClick={handleHamburger}></span>
+        <span onClick={handleHamburger}></span>
+        <span onClick={handleHamburger}></span>
         <NavLink
           to='/'
-        >About Me</NavLink>
+          onClick={handleHamburger}
+        >Обо мне</NavLink>
         <NavLink
           to='/projects'
-        >My Projects</NavLink>
+          onClick={handleHamburger}
+        >Мои проекты</NavLink>
         <NavLink
           to='/contacts'
-        >Contact Me</NavLink>
+          onClick={handleHamburger}
+        >Связаться со мной</NavLink>
       </nav>
       <main>
         <Routes>
@@ -30,4 +40,4 @@ function Nav(props) {
   )
 }
 
-export default Nav
+export default Nav;

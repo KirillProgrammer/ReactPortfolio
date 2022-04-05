@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectCard.scss'
+import './ProjectCard.scss';
 
 function ProjectCard(props) {
   return (
@@ -12,4 +12,4 @@ function ProjectCard(props) {
   )
 }
 
-export default ProjectCard
+export default ProjectCard;

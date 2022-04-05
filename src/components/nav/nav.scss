@@ -3,18 +3,58 @@ nav {
   height: 100%;
   border-radius: 30px;
   background-color: #27415D;
-  padding: 30px;
-  padding-left: 50px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  transition: all 0.5s;
+  span {
+    display: none;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    cursor: pointer;
+  }
   a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(0.98);
+    }
   }
 }
 main {
   padding: 30px;
+}
+
+@media(max-width: 1400px) {
+  nav {
+    width: 250px;
+    padding: 20px 8px;
+  }
+}
+@media(max-width: 1345px) {
+  nav {
+    width: 50px;
+    a {
+      display: none;
+    }
+    span {
+      display: block;
+    }
+  }
+  .nav-is-active {
+    z-index: 2;
+    width: 250px;
+    padding-left: 30px;
+    a {
+      display: block;
+    }
+    span {
+      display: none;
+    }
+  }
 }
