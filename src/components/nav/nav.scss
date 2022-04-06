@@ -10,12 +10,21 @@ nav {
   transition: all 0.5s;
   span {
     display: none;
-    width: 35px;
-    height: 2px;
-    background-color: #fff;
+    position: fixed;
+    left: 25px;
+    top: 30px;
     cursor: pointer;
+    font-size: 30px;
   }
   a {
+    position: fixed;
+    margin-top: 30px;
+    &:nth-of-type(2) {
+      margin-top: 60px;
+    }
+    &:nth-of-type(3) {
+      margin-top: 90px;
+    }
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
@@ -54,7 +63,7 @@ main {
       display: block;
     }
     span {
-      display: none;
+      left: 215px;
     }
   }
 }
