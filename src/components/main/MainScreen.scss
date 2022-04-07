@@ -15,8 +15,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 90px;
     img {
-      width: 80%;
+      width: 30vw;
       border-radius: 30px;
+      align-self: center;
     }
   }
   &__descr {
@@ -24,13 +25,38 @@
     flex-direction: column;
     justify-content: space-between;
     &__text {
+      border-top: 3px solid #212121;
       margin-top: 30px;
       position: relative;
     }
   }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    svg {
+      width: 45px;
+      margin-right: 3px;
+    }
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  .main {
+    &__title {
+      font-size: 30px;
+    }
+    &__descr {
+      &__text {
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
   .main {
     &__wrapper {
       grid-template-columns: 1fr;
