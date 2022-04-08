@@ -13,6 +13,9 @@ function MainScreen(props) {
             <div className="main__descr__text">
               <h2>Я начинающий фронтенд разработчик</h2>
               <p>С начала этого года изучаю программирование. <br /><br /> В работе использую как базовые <strong>HTML5, CSS3</strong>(преиущественно использую <strong>препроцессор SCSS</strong>) и <strong>JavaScript</strong>, так и такие библиотеки как <strong>Tailwind CSS, React, Redux</strong>. Умею работать с системой контроля версий <strong>Git</strong> и сервисом <strong>GitHub</strong>. На данный момент более углублённо изучаю <strong>экосистему React</strong></p>
+              <p>
+                В свободное время пытаюсь решать задачки на <a href="https://www.codewars.com/users/KirillProgrammer">CodeWars</a> или играю в шахматы. На данный момент заканчиваю 11 класс
+              </p>
               <div class="main__icons">
               <div>
                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">

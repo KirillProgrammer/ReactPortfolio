@@ -3,7 +3,10 @@ import './Contacts.scss'
 
 function Contacts() {
   return (
-    <div className='contacts'>Email: kirillkarpovprogramm@gmail.com</div>
+    <div className='contacts'>
+      <p>Email: kirillkarpovprogramm@gmail.com</p>
+      <p>Telegram: https://t.me/NotMandelshtam</p>
+    </div>
   )
 }
 
